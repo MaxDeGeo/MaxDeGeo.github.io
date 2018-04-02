@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/projects.css" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <script src="../js/projects.js"></script>
+    <title>Projects</title>
+</head>
+<body class="site">
+    <!--Nav-->
+    <header>
+        <div id="nav">
+            <div id="inline-nav">
+                <p class="name"><a href="index.html">Max De George</a><p>
+                <nav>
+                    <a href="experience.html">Experience</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        
+            <div id="responsive-nav">
+                <p class="name"><a href="index.html">Max De George</a><p>
+                <i id="bars" class="fa fa-bars" onclick="openNav()" aria-hidden="true"></i>
+                <nav id="side-nav" class="sideNav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-content">
+        <!-- Image -->
+        <img id="header-image" src="../images/placeHolder.jpeg" />
+
+        <!-- Content -->
+        <article id="projects">
+            <img id="profile" src="../images/quest.png"/>
+
+            <section id="content">
+                <div class="col-third" id="completed">
+                    <p>Completed</p>
+                    <a href="">
+                        <div class="project">
+                            <p class="info">Detached</p>
+                            <img src="../images/detached.jpg" />
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="project">
+                            <p class="info">Asteroids</p>
+                            <img src="../images/asteroids.jpg" />
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="project">
+                            <p class="info">E.C.H.O</p>
+                            <img src="../images/echo.jpg" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-third" id="in-progress">
+                    <p>In Progress</p>
+                    <a href="">
+                        <div class="project">
+                            <p class="info">Journal</p>
+                            <img src="../images/journal.jpg" />
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="project">
+                            <p class="info">Personal Portfolio</p>
+                            <img src="../images/personal-portfolio.jpg" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-third" id="not-started">
+                    <p>Not Started</p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Max De George 2018</p>
+    </footer>
+</body>
+</html>

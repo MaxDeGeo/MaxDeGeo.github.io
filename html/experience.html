@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/experience.css" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <script src="../js/experience.js"></script>
+    <title>Experience</title>
+</head>
+<body class="site">
+    <!--Nav-->
+    <header>
+        <div id="nav">
+            <div id="inline-nav">
+                <p class="name"><a href="index.html">Max De George</a><p>
+                <nav>
+                    <a href="experience.html">Experience</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        
+            <div id="responsive-nav">
+                <p class="name"><a href="index.html">Max De George</a><p>
+                <i id="bars" class="fa fa-bars" onclick="openNav()" aria-hidden="true"></i>
+                <nav id="side-nav" class="sideNav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-content">
+        <!-- Image -->
+        <img id="header-image" src="../images/placeHolder.jpeg" />
+
+        <!-- Content -->
+        <article id="experience">
+            <img id="profile" src="../images/xp.PNG"/>
+
+            <section id="levels">
+                <div class="col-half" id="level">
+                    <div>
+                        <h5>Level 1</h5>
+                        <div onclick="display(0)">
+                            <br>
+                            <p>Meadow Drugs &amp; Surgical</p>
+                            <br>
+                            <p>September 2015 - August 2016</p>
+                            <br>
+                            <p>General Employee</p>
+                            <br>
+                            <p>Job: Cashier for a local drug store.</p>
+                            <br>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Level 2</h5>
+                        <div onclick="display(1)">
+                            <br>
+                            <p>National Archives Inc.</p>
+                            <br>
+                            <p>May 2017 - August 2017</p>
+                            <br>
+                            <p>Laborer</p>
+                            <br>
+                            <p>Job: Warehouse employee and data organizer.</p>
+                            <br>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Level 3</h5>
+                        <div onclick="display(2)">
+                            <br>
+                            <p>R.I.T</p>
+                            <br>
+                            <p>January 2018 - May 2018</p>
+                            <br>
+                            <p>Teacher's Assistant</p>
+                            <br>
+                            <p>Job: Teacher's assistant for 2D Animation and Asset Production for
+                            Professor Sten McKinzie.</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-half" id="information">
+                    <div class="info">
+                        <h5>Level 1</h5>
+                        <div>
+                            <br>
+                            <p>Meadow Drugs &amp; Surgical</p>
+                            <br>
+                            <p>September 2015 - August 2016</p>
+                            <br>
+                            <p>General Employee</p>
+                            <br>
+                            <p class="close" onclick="disable(0)">&times;</p>
+                            <p>Meadow Drugs and Surgical is a local drug store in my hometown and was my first job. My job, besides
+                                cashier, was to stock shelves and clean the store throughout the day, as well as organize the basement.
+                                <br><br>
+                                This was my first real job where I was paid hourly, and it taught me how to interact with people in a polite
+                                manner and have a conversation with customers while they waited for their prescriptions, regardless of how we
+                                were treated.
+                                <br>  
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5>Level 2</h5>
+                        <div>
+                            <br>
+                            <p>National Archives Inc.</p>
+                            <br>
+                            <p>May 2017 - August 2017</p>
+                            <br>
+                            <p>Laborer</p>
+                            <br>
+                            <p class="close" onclick="disable(1)">&times;</p>
+                            <p>National Archives was a job I was offered to work throughout the summer between Freshman ad Sophomore year of college.
+                                My primary job here was to move boxes around the warehouse and go on deliveries to customers requesting files
+                                and boxes as well as picking up from customers.
+                                <br><br>
+                                This job consisted of less communication with the public, but gave me the opportunity to connect with coworkers more,
+                                begin to develop strategies on how to work faster and efficiently. It also taught me how to take care of myself, and if
+                                I neede help, to ask for it, because you can't do everything alone, and others are there to help.
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h5>Level 3</h5>
+                        <div>
+                            <br>
+                            <p>R.I.T</p>
+                            <br>
+                            <p>January 2018 - Present</p>
+                            <br>
+                            <p>Teacher's Assistant</p>
+                            <br>
+                            <p class="close" onclick="disable(2)">&times;</p>
+                            <p>Being a Teacher's Assistant requires me to interact with peers and other students on a day to day basis and help explain
+                                concepts and techniques to those who don't understand what to do or to help others advance when they have grasped and understood
+                                how and when to use different skills. I am in charge of this as well as grading for the class. Quite simply, I am a teacher's assistant.
+                                <br><br>
+                                I am learning as a TA how to manage my time so that I have time to grade work, but also how to teach and be clear on what I am trying to
+                                explain. If a student is struggling, I have to be clear on how to use specific software and what to do. I'm really enjoying it, and it's really
+                                teaching me how to be a better leader.
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </section>         
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Max De George 2018</p>
+    </footer>
+</body>
+</html>

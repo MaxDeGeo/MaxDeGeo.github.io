@@ -8,5 +8,5 @@ function closeNav() {
 }
 
 function pdfOpen() {
-    window.open("../files/DeGeorge_Max.pdf",'_blank')
+    window.open("files/DeGeorge_Max.pdf",'_blank')
 }

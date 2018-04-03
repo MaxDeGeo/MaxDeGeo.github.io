@@ -19,12 +19,21 @@ function closeNav() {
 }
 
 function display() {
-    console.log("in");
+    //console.log("in");
+    //Presents Text
     this.children[0].style.display = "block";
     this.children[0].style.position = "absolute";
+    
+    //Blurs out image and lowers brightness
+    this.children[1].style.filter = "blur(5px) brightness(.4)";
+    this.children[1].style.transition = "1s ease-in-out";
 }
 
 function remove() {
-    console.log("out");
+    //console.log("out");
+    //Removes text
     this.children[0].style.display = "none";
+    //Removes blur and brightness
+    this.children[1].style.filter = "blur(0) brightness(1)";
+    this.children[1].style.transition = "1s ease-in-out";    
 }

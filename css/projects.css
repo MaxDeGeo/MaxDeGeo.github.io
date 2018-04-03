@@ -283,7 +283,7 @@ body {
 	z-index: 1;
 }
 
-#content img  {
+/*#content img  {
 	filter: blur(0) brightness(1);
 	transition: 1s ease-in-out;
 }
@@ -291,7 +291,7 @@ body {
 #content img:hover {
     filter: blur(5px) brightness(.4);
 	transition: 1s ease-in-out;
-}
+}*/
 
 
 /* Body End */

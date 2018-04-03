@@ -299,17 +299,16 @@ body {
 }
 
 #information .info div .close {
-	margin-left: 95%;
-	font-size: 2em;
+	margin-left: 97%;
+	font-size: 1.5em;
 	transition: .5s;
-	text-align: center;
-	margin-top: -5px;
-	height: 30px;
-	width: 30px;
+	width: auto;
+	margin-top: -9px;
 }
 
 .close:hover {
-	background-color: rgba(145, 145, 145, 0.425);
+	cursor: pointer;
+	color: rgba(145, 145, 145, 0.425);
 	transition: .5s;
 }
 

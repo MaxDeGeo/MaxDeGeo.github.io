@@ -42,8 +42,8 @@ function display(x) {
 
     element.children[1].children[element.children[1].children.length - 1].style.display = "none";
 
-    element.style.display = "block";
     
+    element.style.display = "block";
     close[x].style.display = "block";
     element.style.WebkitTransition = "all 2s";
     element.style.transition = "all 2s";

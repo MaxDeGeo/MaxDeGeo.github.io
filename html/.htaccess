@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/myfolder
+RewriteRule ^/?([^/]+)$ /myfolder/$1 [L]

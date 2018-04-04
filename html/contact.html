@@ -7,6 +7,8 @@
     <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/contact.css" type="text/css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/contact.js"></script>
     <title>Contact</title>
 </head>
@@ -44,8 +46,35 @@
 
         <!-- Content -->
         <article id="index">
-            <img id="profile" src="../images/Max.png"/>
+            <img id="profile" src="../images/contact.png"/>
         </article>
+
+        <form method="post" action="../php/formmail.php">
+            <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+            <input type="hidden" name="recipients" value="maxtdegeorge@gmail.com" />
+            <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+            <input type="hidden" name="subject" value="Test Mail from Contact Form" />
+
+            <fieldset>
+                <div id="name-div">
+                    <label>Name:</label>
+                    <input type="text" id="nameSection" name="FullName"><br>
+                </div>
+                <div id="email-div">
+                    <label>Email:</label>
+                    <input type="email" id="email" name="EmailAddr"><br>    
+                </div>
+            </fieldset>
+
+            <div>
+                <label id="message-label">Message:</label>
+
+                <textarea id="message" name="mesg">Please enter your message here.</textarea>
+            </div>
+
+            <!--Submit button-->
+            <div type="submit" id="contactSubmit"><p>Submit</p></div>
+        </form>
     </main>
 
     <footer>

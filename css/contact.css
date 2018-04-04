@@ -111,10 +111,11 @@ table {
 }
 /* Columns End */
 
-
+body {
+	font-family: 'Titillium Web', sans-serif;
+}
 
 /* Header Start */
-
 #nav {
 	position: fixed;
 	background: linear-gradient(to right, #39b54a, #8cc63f);
@@ -135,7 +136,7 @@ table {
 
 #inline-nav .name {
 	font-size: 2em;
-	margin-top: 7px;
+	margin-top: 4px;
 	margin-left: 10px;
 	transition: .3s;
 }
@@ -171,7 +172,7 @@ table {
 	z-index: 1;
 	left: 0;
 	right: 100%;
-	bottom: -5px;
+	bottom: -1px;
 	background: white;
 	height: 4px;
 	transition-property: left right;
@@ -212,24 +213,47 @@ table {
 
 /* Header End */
 
+/* Header End */
 
 /* Body Start */
 
 #index {
 	width: 100%;
 	background-color: white;;
-	height: 900px;
+	height: 500px;
 	margin-top: 300px;
 	z-index: -3;
 }
 
 #profile {
-	margin-left: 42%;
-	margin-top: -7.5%;
-	width: 15%;
+	margin-left: 45%;
+	margin-top: -5%;
+	width: 10%;
 	height: auto;
 }
 
+#contactSubmit {
+	background-color: #39b54a;
+	width: 5%;
+	text-align: center;
+	height: 2em;
+	margin-left: 47.5%;
+	color: white;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
+	transition: .3s;
+}
+
+#contactSubmit:hover {
+	cursor: pointer;
+	box-shadow: none;
+	transition: .5s;
+	background-color: #35833f;
+}
+
+#contactSubmit p {
+	font-size: 1.1em;
+	transform: translateY(40%);
+}
 
 /* Body End */
 
@@ -266,9 +290,9 @@ footer p {
 @media (max-width: 1000px)
 {
 	#profile {
-		width: 20%;
-		margin-top: -10%;
-		margin-left: 40%;
+		width: 15%;
+		margin-top: -7.5%;
+		margin-left: 42.5%;
 	}
 }
 
@@ -331,9 +355,9 @@ footer p {
 	/* Body Start */
 
 	#profile {
-		width: 25%;
-		margin-top: -12.5%;
-		margin-left: 37.5%;
+		width: 20%;
+		margin-top: -10%;
+		margin-left: 40%;
 	}
 
 	/* Body End */
@@ -344,9 +368,9 @@ footer p {
 @media (max-width: 560px)
 {
 	#profile {
-		width: 30%;
-		margin-left: 35%;
-		margin-top: -15%;
+		width: 25%;
+		margin-left: 37.5%;
+		margin-top: -12.5%;
 	}
 }
 

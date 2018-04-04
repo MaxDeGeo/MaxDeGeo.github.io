@@ -220,7 +220,7 @@ body {
 #index {
 	width: 100%;
 	background-color: white;;
-	height: 500px;
+	height: auto;
 	margin-top: 300px;
 	z-index: -3;
 }
@@ -230,6 +230,17 @@ body {
 	margin-top: -5%;
 	width: 10%;
 	height: auto;
+}
+
+button {
+	border:none; 
+} 
+
+input {
+	border: none;
+	border-bottom: 1px solid black;
+	font-size: 1em;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 #contactSubmit {
@@ -243,10 +254,6 @@ body {
 	transition: .3s;
 }
 
-button {
-	border:none; 
-} 
-
 #contactSubmit:hover {
 	cursor: pointer;
 	box-shadow: none;
@@ -257,6 +264,21 @@ button {
 #contactSubmit p {
 	font-size: 1.1em;
 	transform: translateY(40%);
+}
+
+#form {
+	width: 80%;
+	margin-left: 10%;
+	display: flex;
+}
+
+form {
+	font-size: 1.3em;
+}
+
+fieldset div {
+	padding-top: 5px;
+	margin-left: 10%;
 }
 
 /* Body End */

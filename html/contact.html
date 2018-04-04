@@ -49,27 +49,31 @@
             <img id="profile" src="../images/contact.png"/>
         </article>
 
-        <form method="post" action="../php/formmail.php" name="ContactForm">
-            <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
-            <input type="hidden" name="recipients" value="maxtdegeorge@gmail.com" />
-            <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
-            <input type="hidden" name="subject" value="Please submit a message." />
-
+        <form method="post" action="../php/send_form_email.php" name="contactform">
             <fieldset>
                 <div>
-                    <label>Name:</label>
-                    <input type="text" id="name" name="FullName"><br>
+                    <label>First Name:</label>
+                    <input type="text" id="name" name="first_name"><br>
+                </div>
+                <div>
+                    <label>Last Name:</label>
+                    <input type="text" id="name" name="last_name"><br>
                 </div>
                 <div>
                     <label>Email:</label>
-                    <input type="email" id="mail" name="EmailAddr"><br>    
+                    <input type="email" id="mail" name="email"><br>    
                 </div>
+                <div>
+                    <label>Phone Number:</label>
+                    <input type="text" id="phone" name="telephone"><br>    
+                </div>
+
             </fieldset>
 
             <div>
                 <label>Message:</label>
 
-                <textarea name="mesg">Please enter your message here.</textarea>
+                <textarea name="comments">Please enter your message here.</textarea>
             </div>
 
             <!--Submit button-->

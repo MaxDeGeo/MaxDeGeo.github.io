@@ -243,6 +243,10 @@ body {
 	transition: .3s;
 }
 
+button {
+	border:none; 
+} 
+
 #contactSubmit:hover {
 	cursor: pointer;
 	box-shadow: none;

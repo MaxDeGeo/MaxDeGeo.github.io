@@ -247,10 +247,10 @@ input {
 
 #contactSubmit {
 	background-color: #39b54a;
-	width: 5%;
+	width: auto;
 	text-align: center;
 	height: 2em;
-	margin-left: 47.5%;
+	margin-left: 48.5%;
 	color: white;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
 	transition: .3s;
@@ -361,6 +361,10 @@ footer p {
 		margin-top: -7.5%;
 		margin-left: 42.5%;
 	}
+
+	#contactSubmit {
+		margin-left: 48%;
+	}
 }
 
 @media (max-width: 768px)
@@ -427,6 +431,23 @@ footer p {
 		margin-left: 40%;
 	}
 
+	#form {
+		flex-direction: column;
+	}
+
+	.col-half {
+		width: 100%;
+		padding-top: 50px; 
+	}
+
+	#message {
+		margin: 0 auto;
+	}
+
+	#contactSubmit {
+		margin-left: 45%;
+	}
+
 	/* Body End */
 
 
@@ -447,6 +468,15 @@ footer p {
 		width: 40%;
 		margin-left: 30%;
 		margin-top: -20%;
+	}
+
+	#form {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#contactSubmit {
+		margin-left: 44%;
 	}
 }
 

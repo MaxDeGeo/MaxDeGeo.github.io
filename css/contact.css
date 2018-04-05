@@ -247,10 +247,10 @@ input {
 
 #contactSubmit {
 	background-color: #39b54a;
-	width: auto;
-	text-align: center;
+	margin: 0 auto;
+	margin-top: 50px;
 	height: 2em;
-	margin-left: 48.5%;
+	display: block;
 	color: white;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
 	transition: .3s;
@@ -361,10 +361,6 @@ footer p {
 		margin-top: -7.5%;
 		margin-left: 42.5%;
 	}
-
-	#contactSubmit {
-		margin-left: 48%;
-	}
 }
 
 @media (max-width: 768px)
@@ -444,13 +440,7 @@ footer p {
 		margin: 0 auto;
 	}
 
-	#contactSubmit {
-		margin-left: 45%;
-	}
-
 	/* Body End */
-
-
 } 
 
 @media (max-width: 560px)
@@ -473,10 +463,6 @@ footer p {
 	#form {
 		width: 100%;
 		margin: 0 auto;
-	}
-
-	#contactSubmit {
-		margin-left: 44%;
 	}
 }
 

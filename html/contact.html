@@ -52,29 +52,31 @@
         <form method="post" action="https://formspree.io/maxtdegeorge@gmail.com" name="contactform">
             <div id="form">
                 <div class="col-half">
-                    <fieldset>
+                    <fieldset class="card">
+                        <h3>Your Info:</h3>
                         <div>
-                            <label>First Name:</label>
-                            <input type="text" id="firstName" name="First-Name"><br>
+                            <input type="text" id="firstName" name="First-Name" placeholder="First Name"><br>
                         </div>
                         <div>
-                            <label>Last Name:</label>
-                            <input type="text" id="latName" name="Last-Name"><br>
+                            <input type="text" id="latName" name="Last-Name" placeholder="Last Name"><br>
                         </div>
                         <div>
-                            <label>Email:</label>
-                            <input type="email" id="email" name="Email"><br>    
+                            <input type="email" id="email" name="Email" placeholder="Email"><br>    
                         </div>
                         <div>
-                            <label>Phone:</label>
-                            <input type="text" id="phone" name="Phone-Number"><br>    
+                            <input type="email" id="email2" placeholder="Confirm Email"><br>    
+                        </div>
+                        <div>
+                            <input type="text" id="phone" name="Phone-Number" placeholder="Phone Number"><br>    
                         </div>
                     </fieldset>
                 </div>
                 <div id="message" class="col-half">
-                    <div>
-                        <label>Message:</label>
-                        <textarea name="Message">Please enter your message here.</textarea>        
+                    <div class="card">
+                        <h3>Message:</h3>
+                        <div>
+                            <textarea name="Message" placeholder="Please enter your message here."></textarea>        
+                        </div>
                     </div>
                 </div>
             </div>

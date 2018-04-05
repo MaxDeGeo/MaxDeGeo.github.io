@@ -242,6 +242,7 @@ input {
 	border-bottom: 1px solid black;
 	font-size: 1em;
 	font-family: 'Titillium Web', sans-serif;
+	width: 80%;
 }
 
 #contactSubmit {
@@ -269,8 +270,8 @@ input {
 
 #form {
 	margin-top: 25px;
-	width: 70%;
-	margin-left: 15%;
+	width: 80%;
+	margin-left: 10%;
 	display: flex;
 }
 
@@ -278,9 +279,24 @@ form {
 	font-size: 1.3em;
 }
 
-fieldset div {
-	padding-top: 5px;
+.card {
+	padding-top: 15px;
+	width: 80%;
+	height: 350px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
+	border: 1px solid black;
 	margin-left: 10%;
+}
+
+h3 {
+	font-weight: bold;
+	padding-left: 20px;
+	font-size: 1.3em;
+}
+
+fieldset div {
+	padding-top: 20px;
+	margin-left: 15%;
 }
 
 #message {
@@ -295,8 +311,13 @@ textarea {
 	font-size: .8em;
 	font-family: 'Titillium Web', sans-serif;
 	line-height: 1.2em;
-	width: 80%;
-	height: 350px;
+	width: 70%;
+	margin-left: 15%;
+	height: 250px;
+}
+
+#message div div {
+	padding-top: 20px;
 }
 
 /* Body End */

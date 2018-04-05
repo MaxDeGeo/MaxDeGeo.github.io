@@ -317,6 +317,7 @@ textarea {
 	height: 250px;
 	border: none;
 	resize: none;
+	outline: none;
 }
 
 #message div div {

@@ -18,34 +18,49 @@ function closeNav() {
 }
 
 function displayError(element) {
-    $(email2).parent().children().fadeIn().css("display", "inline-block");
-    email2.parentElement.children[0].children[0].style.cursor = "pointer";
-    $(email2.parentElement.children[0]).hover(function()
+    $(element).parent().children().fadeIn().css("display", "inline-block");
+    element.parentElement.children[0].children[0].style.cursor = "pointer";
+    $(element.parentElement.children[0]).hover(function()
     {
-        email2.parentElement.children[1].style.visibility = "visible";
+        element.parentElement.children[1].style.visibility = "visible";
     }, function() 
     {
-        email2.parentElement.children[1].style.visibility = "hidden";
+        element.parentElement.children[1].style.visibility = "hidden";
     });
 } 
 
 function customErrorMessage() {
     
-    if(email.value !== email2.value)
+    if(email.value === "")
     {
-        displayError(email2)
-        email2.parentElement.children[1].innerHTML = "Emails are not the same.";
+        displayError(email);
+        email.parentElement.children[1].innerHTML = "Missing Email";
     }
 
-    if($(firstName).val())
+    if(email2.value === "")
     {
-        displayError(firstName)
+        displayError(email2);
+        email2.parentElement.children[1].innerHTML = "Missing Email";
+    }
+
+    if(email.value !== "" && email2.value !== "")
+    {
+        if(email.value !== email2.value)
+        {
+            displayError(email2);
+            email2.parentElement.children[1].innerHTML = "Emails are not the same.";
+        }
+    }
+
+    if(firstName.value === "")
+    {
+        displayError(firstName);
         firstName.parentElement.children[1].innerHTML = "Please enter your first name.";
     }
 
-    if($(lastName).val())
+    if(lastName.value === "")
     {
-        displayError(lastName)
+        displayError(lastName);
         lastName.parentElement.children[1].innerHTML = "Please enter your last name.";
     }
 }
@@ -54,13 +69,13 @@ function canSubmit() {
     
     submit = false;
 
-    if(firstName.value !== null)
+    if($(firstName).val())
     {
-        if(lastName.value !== null)
+        if($(lastName).val())
         {
-            if(email.value !== null)
+            if($(email).val())
             {
-                if(email2.value !== null)
+                if($(email2).val())
                 {
                     submit = true;
                 }
@@ -71,8 +86,9 @@ function canSubmit() {
     if(email.value !== email2.value)
     {
         submit = false;
-        customErrorMessage();
     }
+
+    customErrorMessage();
 
     return submit;
 }

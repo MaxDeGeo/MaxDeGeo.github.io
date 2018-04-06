@@ -325,6 +325,29 @@ textarea {
 	padding-top: 20px;
 }
 
+.error {
+	color: red;
+	font-size: 1.5em;
+	float: right;
+	padding-right: 80px;
+	margin-top: -8px;
+	display: none;
+}
+
+.errorMessage {
+	width: auto;
+	padding: 3px 10px;
+	border-radius: 5px;
+	height: 20px;
+	border: 1px solid black;
+	font-size: .8em;
+	visibility: hidden;
+	position: absolute;
+	background-color: white;
+	margin-left: 26%;
+	margin-top: -5px;
+}
+
 /* Body End */
 
 /* Footer Start */

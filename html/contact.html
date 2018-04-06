@@ -9,6 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <script src="../js/contact.js"></script>
     <title>Contact</title>
 </head>
@@ -47,25 +48,32 @@
         <!-- Content -->
         <article id="contact">
             <img id="profile" src="../images/contact.png"/>
-            <form method="post" action="https://formspree.io/maxtdegeorge@gmail.com" name="contactform">
+            <form method="post" action="https://formspree.io/maxtdegeorge@gmail.com" name="contactform" onsubmit="return canSubmit()">
                 <div id="form" class="card">
                     <div class="col-half">
                         <fieldset>
                             <!--User Info Section-->
                             <h3>Your Info:</h3>
                             <div>
+                                <i class="fas fa-exclamation-circle error"></i>
                                 <input type="text" id="firstName" name="First-Name" placeholder="First Name"><br>
                             </div>
                             <div>
-                                <input type="text" id="latName" name="Last-Name" placeholder="Last Name"><br>
+                                <i class="fas fa-exclamation-circle error"></i>
+                                <input type="text" id="lastName" name="Last-Name" placeholder="Last Name"><br>
                             </div>
                             <div>
+                                <i class="fas fa-exclamation-circle error"></i>
+
                                 <input type="email" id="email" name="Email" placeholder="Email"><br>    
                             </div>
                             <div>
+                                <i class="fas fa-exclamation-circle error"></i>
+                                <p class="errorMessage"></p>
                                 <input type="email" id="email2" placeholder="Confirm Email"><br>    
                             </div>
                             <div>
+                                <i class="fas fa-exclamation-circle error"></i>
                                 <input type="text" id="phone" name="Phone-Number" placeholder="Phone Number"><br>    
                             </div>
                         </fieldset>

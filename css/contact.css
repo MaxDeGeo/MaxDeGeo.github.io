@@ -330,13 +330,12 @@ textarea {
 	font-size: 1.5em;
 	padding-right: 80px;
 	margin-left: 24%;
-	margin-top: -8px;
+	margin-top: 0;
 	display: none;
 	position: absolute;
 }
 
 .errorMessage {
-	width: auto;
 	padding: 3px 10px;
 	border-radius: 5px;
 	height: 20px;
@@ -345,8 +344,8 @@ textarea {
 	visibility: hidden;
 	position: absolute;
 	background-color: white;
-	margin-left: 26%;
-	margin-top: -8px;
+	margin-left: 27.5%;
+	margin-top: 1px;
 }
 
 /* Body End */
@@ -389,6 +388,30 @@ footer p {
 		margin-top: -7.5%;
 		margin-left: 42.5%;
 	}
+
+	.error {
+		color: red;
+		font-size: 1.5em;
+		padding-right: 80px;
+		margin-left: 24%;
+		margin-top: 0;
+		display: none;
+		position: absolute;
+	}
+	
+	.errorMessage {
+		padding: 3px 10px;
+		border-radius: 5px;
+		height: 20px;
+		border: 1px solid black;
+		font-size: .8em;
+		visibility: hidden;
+		position: absolute;
+		background-color: white;
+		margin-left: 28.5%;
+		margin-top: 1px;
+	}
+	
 }
 
 @media (max-width: 768px)
@@ -473,6 +496,28 @@ footer p {
 		padding-top: 0;
 	}
 
+	.error {
+		color: red;
+		font-size: 1.5em;
+		padding-right: 80px;
+		margin-left: -5%;
+		margin-top: 0;
+		display: none;
+		position: absolute;
+	}
+	
+	.errorMessage {
+		padding: 3px 10px;
+		border-radius: 5px;
+		height: 20px;
+		border: 1px solid black;
+		font-size: .8em;
+		visibility: hidden;
+		background-color: white;
+		margin-left: 0%;
+		margin-top: 0;
+	}
+
 	/* Body End */
 } 
 
@@ -482,6 +527,28 @@ footer p {
 		width: 25%;
 		margin-left: 37.5%;
 		margin-top: -12.5%;
+	}
+
+	.error {
+		color: red;
+		font-size: 1.3em;
+		padding-right: 80px;
+		margin-left: -8%;
+		margin-top: 0;
+		display: none;
+		position: absolute;
+	}
+	
+	div .errorMessage {
+		padding: 3px 4px;
+		border-radius: 5px;
+		height: 20px;
+		border: 1px solid black;
+		font-size: .8em;
+		visibility: hidden;
+		background-color: white;
+		margin-left: 0%;
+		margin-top: 0;
 	}
 }
 
@@ -496,6 +563,28 @@ footer p {
 	#form {
 		width: 100%;
 		margin: 0 auto;
+	}
+	
+	.error {
+		color: red;
+		font-size: 1.3em;
+		padding-right: 80px;
+		margin-left: -10%;
+		margin-top: 0;
+		display: none;
+		position: absolute;
+	}
+	
+	div .errorMessage {
+		padding: 3px 4px;
+		border-radius: 5px;
+		height: 20px;
+		border: 1px solid black;
+		font-size: .8em;
+		visibility: hidden;
+		background-color: white;
+		margin-left: 0%;
+		margin-top: 0;
 	}
 }
 

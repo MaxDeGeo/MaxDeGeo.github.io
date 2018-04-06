@@ -34,13 +34,13 @@ function customErrorMessage() {
     if(email.value === "")
     {
         displayError(email);
-        email.parentElement.children[1].innerHTML = "Missing Email";
+        email.parentElement.children[1].innerHTML = "Missing Email.";
     }
 
     if(email2.value === "")
     {
         displayError(email2);
-        email2.parentElement.children[1].innerHTML = "Missing Email";
+        email2.parentElement.children[1].innerHTML = "Missing Email.";
     }
 
     if(email.value !== "" && email2.value !== "")

@@ -20,7 +20,7 @@ function closeNav() {
 function displayError(element) {
     $(element).parent().children().fadeIn().css("display", "inline-block");
     element.parentElement.children[0].children[0].style.cursor = "pointer";
-    $(element.parentElement.children[0]).hover(function()
+    $(element.parentElement.children[0].children[0]).hover(function()
     {
         element.parentElement.children[1].style.visibility = "visible";
     }, function() 

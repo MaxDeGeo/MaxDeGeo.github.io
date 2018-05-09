@@ -6,15 +6,19 @@ window.onload = function() {
     let email = document.querySelector("#email");
     let email2 = document.querySelector("#email2");
 
+    displayLineNumbers();
 }
 
-function openNav() {
-    document.querySelector("#responsive-nav nav").style.width = "250px";
+function navController(element) {
 
-}
-
-function closeNav() {
-    document.querySelector("#responsive-nav nav").style.width = "0px";
+    if($(element).hasClass("mds_navIcon"))
+    {
+        $(element).parent().addClass("mds_navOpen");
+    }
+    else
+    {
+        $(element).parent().parent().removeClass("mds_navOpen");
+    }
 }
 
 function displayError(element) {
@@ -91,4 +95,25 @@ function canSubmit() {
     customErrorMessage();
 
     return submit;
+}
+
+function mediaHeight() {
+    let mediaBar = document.querySelector("#social-media");
+    mediaBar.style.height = "100%";
+}
+
+function displayLineNumbers() {
+
+    //Gets the size of the content section and how many lines should be displayed.
+    
+    let content = document.querySelector("#content");
+    let height = $(content).height();
+    let lineSection = document.querySelector("#line-number");
+    let lineCount = height / 18;
+
+    //Displays those lines.
+    for(let x = 1; x <= lineCount; x++)
+    {
+        $(lineSection).append("<p>" + x + "</p>");
+    }
 }

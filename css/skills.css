@@ -111,80 +111,190 @@ table {
 }
 /* Columns End */
 
-
+body {
+	font-family: 'Consolas', sans-serif;
+	background-color: #1e1e1e;
+	height: 100%;
+}
 
 /* Header Start */
 
-#nav {
+#mdw_nav {
+	box-sizing: border-box;
 	position: fixed;
-	background: linear-gradient(to right, #39b54a, #8cc63f);
-	height: 50px;
+	z-index: 2;
 	width: 100%;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, .5), 0 -4px 6px rgba(0, 0, 0, .5);
-	z-index: 10;
+	padding-left: 50px;
+	background-color: #252526;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, .5), 0 -2px 3px rgba(0, 0, 0, .5);
+}
+@media all and (max-width: 999px) {
+	#mdw_nav {
+		height: 40px;
+	}
 }
 
-/* Desktop Version */
-
-#nav #inline-nav {
-	display: block;
-}
-
-#nav #responsive-nav {
+#mdw_nav i {
 	display: none;
 }
-
-#inline-nav .name {
-	font-size: 2em;
-	margin-top: 7px;
-	margin-left: 10px;
-	transition: .3s;
+@media all and (max-width: 999px) {
+	#mdw_nav i {
+		display: initial;
+	}
 }
 
-#inline-nav .name a {
-	text-decoration: none;
-	color: white;
-	display: inline;
-	position: relative;
-	overflow: hidden;
-}
-
-#inline-nav nav {
-	float: right;
-	padding-right: 15px;
-	margin-top: -25px;
-}
-
-#inline-nav nav a {
-	text-decoration: none;
-	color: white;
-	font-size: 1.5em;
-	margin-left: 30px;
-	transition: .5s;
-	display: inline;
-	position: relative;
-	overflow: hidden;
-}
-
-#inline-nav a:after {
-	content: "";
+#mdw_nav i.mds_navIcon {
 	position: absolute;
+	color: #888f96;
+	right: 10px;
+	top: 2px;
+}
+
+#mdw_nav .mds_innerWrap {
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+@media all and (max-width: 999px) {
+	#mdw_nav .mds_innerWrap {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		height: 100vh;
+		transform: translateX(100%);
+		background: #252526;
+	}
+}
+
+#mdw_nav.mds_navOpen .mds_innerWrap {
+	transform: translateX(0%);
+}
+
+#mdw_nav i.mds_close {
+	padding-left: 8px;
+	color: #888f96;
+	font-size: 2.5em;
+	text-align: left;
+}
+
+@media all and (max-width: 999px) {
+	#mdw_nav i.mds_close {
+		display: block;
+	}
+}
+
+#mdw_nav ul {
+	list-style: none;
+}
+
+#mdw_nav li {
+	display: inline-block;
+}
+@media all and (max-width: 999px) {
+	#mdw_nav li {
+		display: block;
+	}
+	#mdw_nav li a {
+		width: 100%;
+	}
+}
+
+#mdw_nav li a {
+	display: inline-block;
+	padding: 12px 14px 9px 10px;
+	text-decoration: none;
+}
+	#mdw_nav li a.mdm_current {
+		background: #1e1e1e;
+	}
+
+#mdw_nav li a img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+}
+
+#mdw_nav li a p {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+	color: #888f96;
+}
+
+/* Body Start */
+
+#social-media {
+	background-color: #333333;
+	width: 50px;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+#social-media a:first-of-type i
+{
+	padding-top: 10px;
+}
+
+.medias {
+	color: #adadad;
+	transform: translateX(30%);
+	margin-bottom: 20px;
+}
+
+.medias:hover {
+	color: #ffffff;
+}
+
+#line-number {
+	color: #5a5a5a;
+	width: 40px;
+	text-align: right;
+	height: 100%;
+	position: absolute;
+	top: 42px;
+	left: 50px;
+}
+
+#line-number p {
+	padding-bottom: 3px;
+}
+
+#content {
+	margin-top: 3px;
+	height: 500px;
+	position: absolute;
+	background-color: green;
+	top: 40px;
+	left: 140px;
 	z-index: 1;
-	left: 0;
-	right: 100%;
-	bottom: -5px;
-	background: white;
-	height: 4px;
-	transition-property: left right;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-out;
 }
 
-#inline-nav a:hover:after, #inline-nav a:focus:after, #inline-nav a:active:after {
-	right: 0;
+/* Footer Start */
+
+footer {
+	background-color: #007acc;
+	height: 20px;
+	color: white;
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	z-index: 3; 
 }
 
-/* Mobile Version */
+footer p {
+	padding-left: 10px;
+	padding-top: 3px;
+	font-size: .9em;
+	width: 100%;
+}
+
+/* Mobile Version
 
 #bars {
 	display: none;
@@ -211,10 +321,10 @@ table {
 	z-index: -5;
 }
 
-/* Header End */
+/* Header End
 
 
-/* Body Start */
+/* Body Start
 
 #index {
 	width: 100%;
@@ -231,11 +341,11 @@ table {
 	height: auto;
 }
 
-/* Body End */
+/* Body End
 
-/* Footer Start */
+/* Footer Start
 
-/*Philip Walton Help (https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)*/
+/*Philip Walton Help (https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)
 .site {
 	display: flex;
 	min-height: 100vh;
@@ -259,9 +369,9 @@ footer p {
 	margin-top: 12px;
 }
 
-/* Footer End */
+/* Footer End
 
-/* Responsive Section */
+/* Responsive Section
 
 @media (max-width: 1000px)
 {
@@ -274,7 +384,7 @@ footer p {
 
 @media (max-width: 768px)
 {
-	/* Nav Start */
+	/* Nav Start
 
 	#nav #inline-nav {
 		display: none;
@@ -326,9 +436,9 @@ footer p {
 		font-size: 36px;
 		margin-left: 32px;
 	}
-	/* Nav End */
+	/* Nav End
 
-	/* Body Start */
+	/* Body Start
 
 	#profile {
 		width: 20%;
@@ -336,7 +446,7 @@ footer p {
 		margin-left: 40%;
 	}
 
-	/* Body End */
+	/* Body End
 
 
 } 
@@ -359,4 +469,4 @@ footer p {
 	}
 }
 
-/* Responsive Section End */
+/* Responsive Section End

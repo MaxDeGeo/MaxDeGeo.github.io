@@ -265,7 +265,7 @@ body {
 
 footer {
 	background-color: #007acc;
-	height: 20px;
+	height: auto;
 	color: white;
 	position: fixed;
 	width: 100%;
@@ -276,6 +276,7 @@ footer {
 footer p {
 	padding-left: 10px;
 	padding-top: 3px;
+	padding-bottom: 3px;
 	font-size: .9em;
 	width: 100%;
 }
@@ -290,14 +291,19 @@ footer p {
 	position: absolute;
 	color: white;
 	top: 42px;
-	left: 0px;
+	left: 120px;
 	z-index: -1;
-	width: 90%;
-	margin-left: 7%;
+	width: calc(100% - 120px);
 }
 
 .mds_name {
-	padding-left: 1em;
+	padding-left: .5em;
+	font-size: 3em;
+	color: white;
+}
+
+.mds_description {
+	padding-left: 1.5em;
 	font-size: 2em;
 	color: white;
 }
@@ -305,4 +311,17 @@ footer p {
 .mds_tag {
 	color: #2c7cd6;
 }
+
+.mds_gray-tag {
+	color: #5a5a5a;
+}
+
+.mds_blue-tag {
+	color: #81cdf5
+}
+
+.mds_orange-tag {
+	color: #ce9178;
+}
+
 /* Body End */

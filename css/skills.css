@@ -255,7 +255,7 @@ body {
 	color: #5a5a5a;
 	width: 40px;
 	text-align: right;
-	height: 100%;
+	height: calc(100% - 42px);
 	position: absolute;
 	top: 42px;
 	left: 50px;

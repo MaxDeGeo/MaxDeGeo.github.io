@@ -117,7 +117,7 @@ body {
 	height: 100%;
 }
 
-/* Header Start */
+/* Page Format Start */
 
 #mdw_nav {
 	box-sizing: border-box;
@@ -228,8 +228,6 @@ body {
 	color: #888f96;
 }
 
-/* Body Start */
-
 #social-media {
 	background-color: #333333;
 	width: 50px;
@@ -259,27 +257,11 @@ body {
 	color: #5a5a5a;
 	width: 40px;
 	text-align: right;
-	height: calc(100% - 42px);
+	height: calc(100% - 45px);
 	position: absolute;
-	top: 42px;
+	top: 45px;
 	left: 50px;
 }
-
-#line-number p {
-	padding-bottom: 3px;
-}
-
-#content {
-	margin-top: 3px;
-	height: 500px;
-	position: absolute;
-	background-color: green;
-	top: 40px;
-	left: 140px;
-	z-index: 1;
-}
-
-/* Footer Start */
 
 footer {
 	background-color: #007acc;
@@ -298,174 +280,29 @@ footer p {
 	width: 100%;
 }
 
-/* Header End 
+/* Page Format End */
 
+/* Body Start */
 
-/* Body Start 
-
-#index {
-	width: 100%;
-	background-color: white;;
+#content {
+	margin-top: 3px;
 	height: auto;
-	margin-top: 300px;
-	z-index: -3;
-}
-
-#profile {
-	margin-left: 42%;
-	margin-top: -7.5%;
-	width: 15%;
-	height: auto;
-}
-
-#content h3{
-	padding-left: 10%;
-	font-size: 3em;
-	font-weight: bold;
-}
-
-#about {
-	border-style: solid;
-	border-width: 1px;
-	border-color: black;
-	width: 70%;
-	margin-left: 15%;
-	margin-top: 75px;
-	margin-bottom: 75px;
-}
-
-#about p {
-	margin-top: 30px;
+	position: absolute;
+	color: white;
+	top: 42px;
+	left: 0px;
+	z-index: -1;
 	width: 90%;
-	margin-left: 5%;
+	margin-left: 7%;
+}
+
+.mds_name {
+	padding-left: 1em;
 	font-size: 2em;
-	margin-bottom: 30px;
-}
-
-#about #pdf {
-	background-color: #39b54a;
-	width: 75px;
-	text-align: center;
-	height: 2em;
-	margin-left: 5%;
 	color: white;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
-	transition: .3s;
 }
 
-#about #pdf:hover {
-	cursor: pointer;
-	box-shadow: none;
-	transition: .5s;
-	background-color: #35833f;
+.mds_tag {
+	color: #2c7cd6;
 }
-
-#about #pdf p { 
-	font-size: 1.1em;
-	transform: translateY(40%);
-}
-
-/* Body End 
-
-/* Footer Start 
-
-/*Philip Walton Help (https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)
-.site {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-}
-
-.site-content {
-	flex: 1;
-}
-
-footer {
-	height: 50px;
-	width: 100%;
-	background: linear-gradient(to right, #39b54a, #8cc63f);
-}
-
-footer p {
-	text-align: center;
-	color: white;
-	font-size: 1.5em;
-	margin-top: 12px;
-}
-
-/* Footer End */
-
-/* Responsive Section */
-
-@media (max-width: 1000px)
-{
-	/*
-	nav a {
-		display: none;
-	}
-
-	nav div {
-		height: 40px;
-		padding-left: 10px;
-		padding-right: 10px;
-		display: block;
-	}
-	
-	nav div img {
-		padding-top: 10px;
-		float: left;
-		width: 20px;
-		height: 20px;
-	}
-	
-	nav div p {
-		
-		color: #888f96;
-		float: none;
-		padding-top: 11px;
-	}
-	
-	#bars {
-		display: block;
-		position: fixed;
-		color: #888f96;
-		right: 10px;
-		top: 4px;
-	}
-
-	.sideNav {
-		height: 100%;
-		position: fixed;
-		z-index: 15;
-		top: 0;
-		right: 0;
-		background-color: #252526;
-		overflow-x: hidden;
-		transition: 0.5s;
-	}
-/*
-	.sideNav a {
-		padding: 8px 8px 8px 32px;
-		text-decoration: none;
-		font-size: 25px;
-		color: white;
-		display: block;
-		transition: 0.3s;
-	}
-	
-	.sideNav a:hover {
-		color: #f1f1f1;
-	}
-	
-	.sideNav .closebtn {
-		position: absolute;
-		padding-left: 0px;
-		top: 0px;
-		left: 0px;
-		font-size: 36px;
-		margin-left: 32px;
-	}
-*/
-}
-
-/* Responsive Section End */
+/* Body End */

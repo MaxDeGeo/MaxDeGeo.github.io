@@ -25,7 +25,7 @@ function displayLineNumbers() {
     let content = document.querySelector("#content");
     let height = $(content).height();
     let lineSection = document.querySelector("#line-number");
-    let lineCount = height / 18;
+    let lineCount = height / 16;
 
     //Displays those lines.
     for(let x = 1; x <= lineCount; x++)

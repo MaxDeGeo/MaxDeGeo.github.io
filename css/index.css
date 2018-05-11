@@ -261,6 +261,7 @@ body {
 	position: absolute;
 	top: 45px;
 	left: 50px;
+	user-select: none;
 }
 
 footer {
@@ -306,6 +307,31 @@ footer p {
 	padding-left: 1.5em;
 	font-size: 2em;
 	color: white;
+}
+
+.mds_developer-blurb {
+	padding-left: 2em;
+	font-size: 1em;
+}
+
+.mds_resume {
+	display: inline-block;
+	margin-left: 2em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 3px 7px;
+	background-color: #333333;
+	color: #adadad;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
+	cursor: pointer;
+	user-select: none;
+	transition: .5s;
+}
+
+.mds_resume:hover {
+	color: white;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
+	transition: .5s;
 }
 
 .mds_tag {

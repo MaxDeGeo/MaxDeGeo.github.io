@@ -38,3 +38,7 @@ function mediaHeight() {
     let mediaBar = document.querySelector("#social-media");
     mediaBar.style.height = "100%";
 }
+
+function openResume() {
+    window.open("files/DeGeorge_Max.pdf",'_blank');
+}

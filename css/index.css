@@ -127,6 +127,7 @@ body {
 	padding-left: 50px;
 	background-color: #252526;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, .5), 0 -2px 3px rgba(0, 0, 0, .5);
+	user-select: none;
 }
 @media all and (max-width: 999px) {
 	#mdw_nav {
@@ -295,6 +296,7 @@ footer p {
 	left: 120px;
 	z-index: -1;
 	width: calc(100% - 120px);
+	margin-bottom: 50px;
 }
 
 .mds_name {
@@ -312,6 +314,10 @@ footer p {
 .mds_developer-blurb {
 	padding-left: 2em;
 	font-size: 1em;
+}
+
+.mds_dev-blurb {
+	padding-left: 2em;
 }
 
 .mds_resume {

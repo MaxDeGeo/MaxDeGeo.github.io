@@ -148,7 +148,7 @@ body {
 	position: absolute;
 	color: #888f96;
 	right: 10px;
-	top: 2px;
+	top: 4px;
 }
 
 #mdw_nav .mds_innerWrap {
@@ -295,8 +295,15 @@ footer p {
 	top: 42px;
 	left: 120px;
 	z-index: -1;
-	width: calc(100% - 120px);
+	width: 60%;
 	margin-bottom: 50px;
+}
+
+@media all and (max-width: 425px) {
+	#content {
+		width: calc(90% - 100px);
+		left: 100px;
+	}
 }
 
 .mds_name {
@@ -304,20 +311,41 @@ footer p {
 	font-size: 3em;
 	color: white;
 }
+@media all and (max-width: 425px) {
+	.mds_name {
+		font-size: 2em;
+	}
+}
 
 .mds_description {
 	padding-left: 1.5em;
 	font-size: 2em;
 	color: white;
 }
+@media all and (max-width: 425px) {
+	.mds_description {
+		padding-left: 1em;
+	}
+}
 
 .mds_developer-blurb {
 	padding-left: 2em;
 	font-size: 1em;
 }
+@media all and (max-width: 425px) {
+	.mds_developer-blurb {
+		padding-left: 1em;
+	}
+}
+
 
 .mds_dev-blurb {
 	padding-left: 2em;
+}
+@media all and (max-width: 425px) {
+	.mds_dev-blurb {
+		padding-left: 1em;
+	}
 }
 
 .mds_resume {

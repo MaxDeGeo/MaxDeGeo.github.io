@@ -117,7 +117,7 @@ body {
 	height: 100%;
 }
 
-/* Header Start */
+/* Page Format Start */
 
 #mdw_nav {
 	box-sizing: border-box;
@@ -127,6 +127,7 @@ body {
 	padding-left: 50px;
 	background-color: #252526;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, .5), 0 -2px 3px rgba(0, 0, 0, .5);
+	user-select: none;
 }
 @media all and (max-width: 999px) {
 	#mdw_nav {
@@ -147,7 +148,7 @@ body {
 	position: absolute;
 	color: #888f96;
 	right: 10px;
-	top: 2px;
+	top: 4px;
 }
 
 #mdw_nav .mds_innerWrap {
@@ -228,8 +229,6 @@ body {
 	color: #888f96;
 }
 
-/* Body Start */
-
 #social-media {
 	background-color: #333333;
 	width: 50px;
@@ -259,31 +258,16 @@ body {
 	color: #5a5a5a;
 	width: 40px;
 	text-align: right;
-	height: calc(100% - 42px);
+	height: calc(100% - 45px);
 	position: absolute;
-	top: 42px;
+	top: 45px;
 	left: 50px;
+	user-select: none;
 }
-
-#line-number p {
-	padding-bottom: 3px;
-}
-
-#content {
-	margin-top: 3px;
-	height: 500px;
-	position: absolute;
-	background-color: green;
-	top: 40px;
-	left: 140px;
-	z-index: 1;
-}
-
-/* Footer Start */
 
 footer {
 	background-color: #007acc;
-	height: 20px;
+	height: auto;
 	color: white;
 	position: fixed;
 	width: 100%;
@@ -294,270 +278,64 @@ footer {
 footer p {
 	padding-left: 10px;
 	padding-top: 3px;
+	padding-bottom: 3px;
 	font-size: .9em;
 	width: 100%;
 }
 
-/* Header End 
+/* Page Format End */
 
+/* Body Start */
 
-/* Body Start 
-
-#experience {
-	width: 100%;
-	background-color: white;;
+#content {
+	margin-top: 3px;
 	height: auto;
-	margin-top: 300px;
-	z-index: -3;
-}
-
-#profile {
-	margin-left: 45%;
-	margin-top: -5%;
-	width: 10%;
-	height: auto;
-}
-
-#levels {
-	width: 80%;
-	height: auto;
-	margin-left: 10%;
-	display: flex;
-	margin-top: 50px;
+	position: absolute;
+	color: white;
+	top: 42px;
+	left: 120px;
+	z-index: -1;
+	width: 60%;
 	margin-bottom: 50px;
 }
 
-#level div h5 {
-	text-align: center;
-	font-size: 1.5em;
-	margin-bottom: 20px;
-	border-color: black;
-	border-width: 1px;
-	border-style: solid;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
-	width: 75px;
-	padding: 5px;
-}
-
-#level div div {
-	border-color: black;
-	border-width: 1px;
-	border-style: solid;
-	width: 70%;
-	margin-bottom: 30px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
-	transition: .5s;
-}
-
-#level div div:hover {
-	box-shadow: none;
-	transition: .5s;
-	background-color: #5caf67;
-	cursor: pointer;
-}
-
-#level div div p {
-	text-align: center;
-	font-size: 1.3em;
-	padding: 0px 5px;
-	line-height: 1.1em; 
-}
-
-#level div div p:nth-child(2) {
-	font-weight: bold;
-}
-
-.info {
-	display: none;
-	border-color: black;
-	border-width: 1px;
-	border-style: solid;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
-	padding: 15px;
-	font-size: 1.3em;
-	line-height: 1.2em;
-	margin-top: 56px;
-}
-
-.info div p {
-	width: 95%;
-	margin-top: -25px;
-}
-
-#information .info div .close {
-	margin-left: 97%;
-	font-size: 1.5em;
-	transition: .5s;
-	width: auto;
-	margin-top: -9px;
-}
-
-.close:hover {
-	cursor: pointer;
-	color: rgba(145, 145, 145, 0.425);
-	transition: .5s;
-}
-
-/* Body End 
-
-/* Footer Start 
-
-/*Philip Walton Help (https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)
-.site {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-}
-
-.site-content {
-	flex: 1;
-}
-
-footer {
-	height: 50px;
-	width: 100%;
-	background: linear-gradient(to right, #39b54a, #8cc63f);
-}
-
-footer p {
-	text-align: center;
-	color: white;
-	font-size: 1.5em;
-	margin-top: 12px;
-}
-
-/* Footer End
-
-/* Responsive Section
-
-@media (max-width: 1000px)
-{
-	#profile {
-		width: 15%;
-		margin-top: -7.5%;
-		margin-left: 42.5%;
+@media all and (max-width: 425px) {
+	#content {
+		width: calc(90% - 100px);
+		left: 100px;
 	}
 }
 
-@media (max-width: 768px)
-{
-	/* Nav Start
-
-	#nav #inline-nav {
-		display: none;
-	}
-	
-	#nav #responsive-nav {
-		display: block;
-	}
-
-	#bars {
-		display: block;
-	}
-
-	#nav p {
-		font-size: 2.5em;
-	}
-
-	.sideNav {
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 1;
-		top: 0;
-		right: 0;
-		background-color: #39b54a;
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;
-	}
-
-	.sideNav a {
-		padding: 8px 8px 8px 32px;
-		text-decoration: none;
-		font-size: 25px;
-		color: white;
-		display: block;
-		transition: 0.3s;
-	}
-	
-	.sideNav a:hover {
-		color: #f1f1f1;
-	}
-	
-	.sideNav .closebtn {
-		position: absolute;
-		padding-left: 0px;
-		top: 0px;
-		left: 0px;
-		font-size: 36px;
-		margin-left: 32px;
-	}
-	/* Nav End
-
-	/* Body Start 
-
-	#profile {
-		width: 20%;
-		margin-top: -10%;
-		margin-left: 40%;
-	}
-
-	#level {
-		width: 100%;
-	}
-
-	#level div h5 {
-		margin-left: 15%;
-	}
-
-	#level div div {
-		margin-left: 15%;
-	}
-
-	#information {
-		display: none;
-	}
-
-	/* Body End
-
-
-} 
-
-@media (max-width: 560px)
-{
-	#profile {
-		width: 25%;
-		margin-left: 37.5%;
-		margin-top: -12.5%;
-	}
-
-	#level div div {
-		width: 90%;
-		margin-left: 5%;
-	}
-
-	#level div h5 {
-		margin-left: 5%;
+.mds_experience-title {
+	font-size: 3em;
+}
+@media all and (max-width: 425px) {
+	.mds_experience-title {
+		font-size: 2em;
 	}
 }
 
-@media (max-width: 380px)
-{
-	#profile {
-		width: 40%;
-		margin-left: 30%;
-		margin-top: -20%;
-	}
-
-	#level div div {
-		width: 98%;
-		margin-left: 1%;
-	}
-
-	#level div h5 {
-		margin-left: 1%;
-	}
+.mdm_indent-1 {
+	padding-left: 2em;
 }
 
-/* Responsive Section End
+.mds_yellow-css {
+	color: #d7ba7d;
+}
+
+.mds_blue-css {
+	color: #68d0fe;
+}
+
+.mds_orange-css {
+	color: #ce9178;
+}
+
+.mds_green-css {
+	color: #93ce9b;
+}
+
+.mds_white-css {
+	color: #d4d4d4;
+}
+/* Body End */

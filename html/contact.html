@@ -54,8 +54,8 @@
                         
                         <li class="mds_navContact">
                             <a href="../html/contact.html" class="mdm_current">
-                                <img src="../images/brackets.png" alt="image of chevrons"/>
-                                <p>contact.html</p>
+                                <img src="../images/hash.png" alt="image of chevrons"/>
+                                <p>contact.css</p>
                             </a>
                         </li><!-- .mds_contactNav -->
                         
@@ -68,7 +68,7 @@
 
     <main id="site-content">
         
-        <article id="index">
+        <article id="contact">
             <aside>
                 <div id="social-media">
                     <a href="https://twitter.com/Max_DeGeo" target="_blank"><i class="fab fa-twitter fa-2x medias"></i></a>
@@ -82,7 +82,35 @@
             </aside>
 
             <section id="content">
-                <p>Hello</p>
+                <span class="mds_yellow-css"><h1 class="mds_contact-title">#Contact <span class="mds_white-css">{</span></h1></span>
+                <br>
+                <form method="post" action="https://formspree.io/maxtdegeorge@gmail.com" name="contactform" onsubmit="return canSubmit()">
+                    <fieldset>
+                        <!--Name-->
+                        <label class="mds_blue-css">first-name:</label>
+                        <input type="text" name="First-Name" placeholder="First Name;" class="mds_orange-css"><br>
+                        <label class="mds_blue-css">last-name:</label>
+                        <input type="text" name="Last-Name" placeholder="Last Name;" class="mds_orange-css"><br>
+                        <label class="mds_blue-css">email:</label>
+                        <input type="email" name="email" placeholder="Email;" class="mds_green-css"><br>
+                        <label class="mds_blue-css">email-confirmation:</label>
+                        <input type="email" placeholder="Confirm Email;" class="mds_green-css"><br>
+                        <label class="mds_blue-css">phone-number:</label>
+                        <input type="text" name="Phone Number" placeholder="Phone Number;" class="mds_green-css"><br>
+                    </fieldset>
+                    <label class="mds_blue-css mds_message-label">message:</label>
+                    <textarea name="Message" placeholder="Please enter your message here;" class="mds_orange-css"></textarea>
+
+                <span class="mds_white-css"><p class="mds_contact-title">}</p></span>
+
+                <br>
+                <span class="mds_yellow-css"><p class="mds_contact-button">.button <span class="mds_white-css">{</span></p></span>
+                    <br>
+                    <button type="submit" class="mds_button-submit">Submit</button>
+                    <br>
+                    <br>
+                <span class="mds_white-css"><p class="mds_contact-button">}</p></span>
+            </form>
             </section>
         </article>
     </main>

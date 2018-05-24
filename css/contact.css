@@ -117,7 +117,7 @@ body {
 	height: 100%;
 }
 
-/* Header Start */
+/* Page Format Start */
 
 #mdw_nav {
 	box-sizing: border-box;
@@ -127,6 +127,7 @@ body {
 	padding-left: 50px;
 	background-color: #252526;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, .5), 0 -2px 3px rgba(0, 0, 0, .5);
+	user-select: none;
 }
 @media all and (max-width: 999px) {
 	#mdw_nav {
@@ -147,7 +148,7 @@ body {
 	position: absolute;
 	color: #888f96;
 	right: 10px;
-	top: 2px;
+	top: 4px;
 }
 
 #mdw_nav .mds_innerWrap {
@@ -228,8 +229,6 @@ body {
 	color: #888f96;
 }
 
-/* Body Start */
-
 #social-media {
 	background-color: #333333;
 	width: 50px;
@@ -259,31 +258,16 @@ body {
 	color: #5a5a5a;
 	width: 40px;
 	text-align: right;
-	height: calc(100% - 42px);
+	height: calc(100% - 45px);
 	position: absolute;
-	top: 42px;
+	top: 45px;
 	left: 50px;
+	user-select: none;
 }
-
-#line-number p {
-	padding-bottom: 3px;
-}
-
-#content {
-	margin-top: 3px;
-	height: 500px;
-	position: absolute;
-	background-color: green;
-	top: 40px;
-	left: 140px;
-	z-index: 1;
-}
-
-/* Footer Start */
 
 footer {
 	background-color: #007acc;
-	height: 20px;
+	height: auto;
 	color: white;
 	position: fixed;
 	width: 100%;
@@ -294,385 +278,130 @@ footer {
 footer p {
 	padding-left: 10px;
 	padding-top: 3px;
+	padding-bottom: 3px;
 	font-size: .9em;
 	width: 100%;
 }
-/* Header End */
 
-/* Header End */
+/* Page Format End */
 
-/* Body Start
+/* Body Start */
 
-#contact {
-	width: 100%;
-	background-color: white;;
+#content {
+	margin-top: 3px;
 	height: auto;
-	margin-top: 300px;
-	z-index: -3;
+	position: absolute;
+	color: white;
+	top: 42px;
+	left: 120px;
+	z-index: -1;
+	width: 60%;
+	margin-bottom: 50px;
 }
 
-#profile {
-	margin-left: 45%;
-	margin-top: -5%;
-	width: 10%;
-	height: auto;
+@media all and (max-width: 425px) {
+	#content {
+		width: calc(90% - 100px);
+		left: 100px;
+	}
 }
 
-button {
-	margin-top: 50px;
-	border:none;
-} 
+.mds_contact-title {
+	font-size: 3em;
+}
+@media all and (max-width: 425px) {
+	.mds_contact-title {
+		font-size: 2em;
+	}
+}
+
+.mds_contact-button {
+	font-size: 2em;
+}
+@media all and (max-width: 425px) {
+	.mds_contact-button {
+		font-size: 1em;
+	}
+}
 
 input {
 	outline: none;
 	border: none;
-	border-bottom: 1px solid black;
-	font-size: 1em;
-	font-family: 'Titillium Web', sans-serif;
-	width: 80%;
+	background-color: #1e1e1e;
+}
+@media all and (max-width: 425px) {
+	input {
+		padding-left: 4em;
+	}
 }
 
-#contactSubmit {
-	background-color: #39b54a;
-	margin: 0 auto;
-	margin-top: 50px;
-	height: 2em;
-	display: block;
-	color: white;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
-	transition: .3s;
+label {
+	padding-left: 2em;
+}
+@media all and (max-width: 425px) {
+	label {
+		padding-left: 1em;
+	}
 }
 
-#contactSubmit:hover {
-	cursor: pointer;
-	box-shadow: none;
-	transition: .5s;
-	background-color: #35833f;
-}
-
-#contactSubmit p {
-	font-size: 1.1em;
-	transform: translateY(40%);
-}
-
-#form {
-	margin-top: 25px;
-	width: 70%;
-	margin-left: 15%;
-	display: flex;
-}
-
-form {
-	font-size: 1.3em;
-}
-
-.card {
-	margin-top: 50px;
-	padding-top: 15px;
-	width: 60%;
-	height: 350px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
-	border: 1px solid black;
-	margin-left: 20%;
-}
-
-h3 {
-	font-weight: bold;
-	padding-left: 20px;
-	font-size: 1.3em;
-}
-
-fieldset div {
-	padding-top: 20px;
-	margin-left: 15%;
-}
-
-#message {
-	margin-left: 0%;
-}
-
-#message label {
-	vertical-align: top;
-}
 
 textarea {
-	font-size: .8em;
-	font-family: 'Titillium Web', sans-serif;
-	line-height: 1.2em;
-	width: 70%;
-	margin-left: 15%;
-	height: 250px;
 	border: none;
 	resize: none;
 	outline: none;
+	background-color: #1e1e1e;
+	height: 128px;
+	width: 30%;
+}
+@media all and (max-width: 425px) {
+	textarea {
+		padding-left: 4em;
+		width: 70%;
+	}
 }
 
-#message div div {
-	padding-top: 20px;
+.mds_button-submit {
+	border: none;
+	margin-left: 3em;
+	padding: 3px 7px;
+	background-color: #333333;
+	color: #adadad;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
+	cursor: pointer;
+	user-select: none;
+	transition: .5s;
 }
 
-.error {
-	color: red;
-	font-size: 1.5em;
-	padding-right: 80px;
-	margin-left: 24%;
-	margin-top: 0;
-	display: none;
-	position: absolute;
-	z-index: 1;
-}
-
-.errorMessage {
-	padding: 3px 10px;
-	border-radius: 5px;
-	height: 20px;
-	border: 1px solid black;
-	font-size: .8em;
-	visibility: hidden;
-	position: absolute;
-	background-color: white;
-	margin-left: 27.5%;
-	margin-top: 1px;
-}
-
-/* Body End 
-
-/* Footer Start 
-
-/*Philip Walton Help (https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)
-.site {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-}
-
-.site-content {
-	flex: 1;
-}
-
-footer {
-	margin-top: 30px;
-	height: 50px;
-	width: 100%;
-	background: linear-gradient(to right, #39b54a, #8cc63f);
-}
-
-footer p {
-	text-align: center;
+.mds_button-submit:hover {
 	color: white;
-	font-size: 1.5em;
-	margin-top: 12px;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, .5), 0 0px 0px rgba(0, 0, 0, .5);
+	transition: .5s;
 }
 
-/* Footer End
-
-/* Responsive Section
-
-@media (max-width: 1000px)
-{
-	#profile {
-		width: 15%;
-		margin-top: -7.5%;
-		margin-left: 42.5%;
-	}
-
-	.error {
-		color: red;
-		font-size: 1.5em;
-		padding-right: 80px;
-		margin-left: 24%;
-		margin-top: 0;
-		display: none;
-		position: absolute;
-	}
-	
-	.errorMessage {
-		padding: 3px 10px;
-		border-radius: 5px;
-		height: 20px;
-		border: 1px solid black;
-		font-size: .8em;
-		visibility: hidden;
-		position: absolute;
-		background-color: white;
-		margin-left: 28.5%;
-		margin-top: 1px;
-	}
-	
+.mds_message-label {
+	vertical-align: top;
+}
+.mdm_indent-1 {
+	padding-left: 2em;
 }
 
-@media (max-width: 768px)
-{
-	/* Nav Start
-
-	#nav #inline-nav {
-		display: none;
-	}
-	
-	#nav #responsive-nav {
-		display: block;
-	}
-
-	#bars {
-		display: block;
-	}
-
-	#nav p {
-		font-size: 2.5em;
-	}
-
-	.sideNav {
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 1;
-		top: 0;
-		right: 0;
-		background-color: #39b54a;
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;
-	}
-
-	.sideNav a {
-		padding: 8px 8px 8px 32px;
-		text-decoration: none;
-		font-size: 25px;
-		color: white;
-		display: block;
-		transition: 0.3s;
-	}
-	
-	.sideNav a:hover {
-		color: #f1f1f1;
-	}
-	
-	.sideNav .closebtn {
-		position: absolute;
-		padding-left: 0px;
-		top: 0px;
-		left: 0px;
-		font-size: 36px;
-		margin-left: 32px;
-	}
-	/* Nav End
-
-	/* Body Start
-
-	#profile {
-		width: 20%;
-		margin-top: -10%;
-		margin-left: 40%;
-	}
-
-	#form {
-		flex-direction: column;
-	}
-
-	.col-half {
-		width: 100%;
-		padding-top: 15px; 
-	}
-
-	#message {
-		margin: 0 auto;
-	}
-
-	.card {
-		height: auto;
-		padding-top: 0;
-	}
-
-	.error {
-		color: red;
-		font-size: 1.5em;
-		padding-right: 80px;
-		margin-left: -5%;
-		margin-top: 0;
-		display: none;
-		position: absolute;
-	}
-	
-	.errorMessage {
-		padding: 3px 10px;
-		border-radius: 5px;
-		height: 20px;
-		border: 1px solid black;
-		font-size: .8em;
-		visibility: hidden;
-		background-color: white;
-		margin-left: 0%;
-		margin-top: 0;
-	}
-
-	/* Body End
-} 
-
-@media (max-width: 560px)
-{
-	#profile {
-		width: 25%;
-		margin-left: 37.5%;
-		margin-top: -12.5%;
-	}
-
-	.error {
-		color: red;
-		font-size: 1.3em;
-		padding-right: 80px;
-		margin-left: -8%;
-		margin-top: 0;
-		display: none;
-		position: absolute;
-	}
-	
-	div .errorMessage {
-		padding: 3px 4px;
-		border-radius: 5px;
-		height: 20px;
-		border: 1px solid black;
-		font-size: .8em;
-		visibility: hidden;
-		background-color: white;
-		margin-left: 0%;
-		margin-top: 0;
-	}
+.mds_yellow-css {
+	color: #d7ba7d;
 }
 
-@media (max-width: 380px)
-{
-	#profile {
-		width: 40%;
-		margin-left: 30%;
-		margin-top: -20%;
-	}
-
-	#form {
-		width: 90%;
-		margin: 0 auto;
-	}
-	
-	.error {
-		color: red;
-		font-size: 1.3em;
-		padding-right: 80px;
-		margin-left: -10%;
-		margin-top: 0;
-		display: none;
-		position: absolute;
-	}
-	
-	div .errorMessage {
-		padding: 3px 4px;
-		border-radius: 5px;
-		height: 20px;
-		border: 1px solid black;
-		font-size: .8em;
-		visibility: hidden;
-		background-color: white;
-		margin-left: 0%;
-		margin-top: 0;
-	}
+.mds_blue-css {
+	color: #68d0fe;
 }
 
-/* Responsive Section End
+.mds_orange-css {
+	color: #ce9178;
+}
+
+.mds_green-css {
+	color: #93ce9b;
+}
+
+.mds_white-css {
+	color: #d4d4d4;
+}
+/* Body End */

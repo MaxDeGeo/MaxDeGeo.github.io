@@ -1,0 +1,158 @@
+/* CSS RESET START */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET FINISHED */
+
+
+
+/* Columns Start */
+.col-whole {
+    width: 100%;
+}
+
+.col-three-fourth {
+    width: 75%;
+}
+
+.col-two-third {
+    width: 66.66%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33%;
+}
+
+.col-fourth {
+    width: 25%;
+}
+
+.col-fifth {
+    width: 20%;
+}
+
+.col-sixth {
+    width: 16.67%;
+}
+
+.col-seventh {
+    width: 14.285%;
+}
+
+.col-eighth {
+    width: 12.5%;
+}
+
+.col-ninth {
+    width: 11.11%;
+}
+
+.col-tenth {
+    width: 10%;
+}
+
+.col-eleventh {
+    width: 9.0909%;
+}
+
+.col-twelfth {
+    width: 8.3333%;
+}
+
+
+/* Body */
+body {
+    background-color: rgba(235, 235, 235, 0.685);
+}
+
+.mds_construction_notice {
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 80%;
+    padding-bottom: 50px;
+    background-color:  #ebe8e2;
+    box-shadow: 0px 8px 12px -3px rgba(150,150,150,0.2);
+}
+@media all and (max-width: 900px) {
+	.mds_construction_notice {
+        margin-left: 2.5%;
+        width: 95%;
+	}
+}
+
+.mds_construction_title {
+    padding-top: 20px;
+    text-align: center;
+    font-family: serif;
+    font-size: 5em;
+    font-weight: bold;
+}
+@media all and (max-width: 750px) {
+	.mds_construction_title {
+		font-size: 3em;
+	}
+}
+
+.mds_construction_text {
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5em;
+}
+@media all and (max-width: 500px) {
+	.mds_construction_text {
+		font-size: 1em;
+	}
+}

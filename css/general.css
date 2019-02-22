@@ -111,30 +111,11 @@ table {
 }
 /* Columns End */
 
-nav {
-    height: 50px;
-    width: 100%;
-}
-
-nav ul {
-    width: 90%;
-    margin-left: 5%;
-    display: flex;
-    padding-top: 15px;
-
-}
-
-nav li {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 30px;
-}
-
-nav a {
-    font-family: OpenSans-Regular;
-    text-decoration: none;
-    font-size: 1.1em;
-    color: black;
+body {
+    margin-top: 45px;
+    margin-bottom: 50px;
+    background-color: rgb(240, 240, 240);
+    font-family: OpenSans-SemiBold;
 }
 
 @font-face {
@@ -150,4 +131,47 @@ nav a {
 @font-face {
     font-family: OpenSans-Bold;
     src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+.underline {
+    height: 2px;
+    width: 50%;
+    background-color: black;
+    margin-top: 5px;
+    margin-left: 22px;
+}
+
+.titles {
+    display: inline-block;
+}
+
+h3 {
+	font-size: 2em;
+	margin-left: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.flexible {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+/*
+@media all and (max-width: 992px) {
+    .flexible {
+        flex-direction: column;
+    }
+}
+*/
+
+.text_wall {
+    line-height: 1.2em;
+}
+@media all and (max-width: 992px) {
+    .col-third {
+		width: 50%;
+	}
 }

@@ -104,6 +104,26 @@
             <h3>Contact</h3>
             <div class="underline"></div>
         </div>
+          <form id="contact_form" name="contact_form">
+            <div class="flexible">
+              <div class="col-half">
+                <div class="text_input">
+                  <label name="name">Name:</label>
+                  <input id="contact_Name">
+                </div>
+                <br>
+                <div class="text_input">
+                  <label name="email">Email:</label>
+                  <input id="contact_Email">
+                </div>
+                <br>
+              </div>
+              <textarea name="message" id="message" class="col-half" placeholder="Please enter your message"></textarea>
+          </div>
+          <div class="col-half">
+            <button type="submit" id="contact_submit" onclick="changeText('Sent!');">Submit</button>
+          </div>
+        </form>
     </section>
 </body>
 </html>

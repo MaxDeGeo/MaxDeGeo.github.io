@@ -1,0 +1,141 @@
+#intro_video video {
+	width: 100%;
+	height: auto;
+}
+
+#projects {
+	margin-bottom: 300px;
+}
+
+h3 {
+	padding-top: 50px;
+}
+
+.exp {
+	margin: 0px 20px;
+	padding: 10px 10px;
+	border-radius: .2em;
+	box-shadow: 0px 0px 3px 0px rgba(163,163,163,1);
+}
+
+.exp h4 {
+	font-size: 1.4em;
+}
+
+.exp p {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#categories {
+	width: 90%;
+	margin-top: 25px;
+	margin-left: 5%;
+}
+
+#categories h4 {
+	font-size: 1.4em;
+}
+
+#categories .flexible {
+	flex-wrap: wrap;
+	margin-top: 0px;
+}
+
+.category {
+	margin-top: 25px;
+	height: auto;
+	padding: 10px;
+	border-radius: .2em;
+	box-shadow: 0px 0px 3px 0px rgba(163,163,163,1);
+	transition: .5s;
+	cursor: pointer;
+}
+
+.category:hover {
+	transition: .5s;
+	filter: grayscale(100%);
+	background-color: rgba(163, 163, 163, 1);
+}
+
+.category
+
+.category img {
+	display: block;
+	margin: 0 auto;
+	height: 100px;
+	width: auto;
+}
+
+.category h5 {
+	margin-top: 10px;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.category p {
+	line-height: 1.3em;
+	margin-top: 10px;
+	font-size: 1em;
+}
+
+#contact_form {
+	margin-top: 20px;
+	width: 90%;
+	margin-left: 5%;
+}
+
+#contact_form label {
+	display: inline-block;
+	width: 75px;
+	text-align: right;
+	font-size: 1.3em;
+}
+
+#contact_form input {
+	border: none;
+	border-bottom: 1px solid black;
+	outline: none;
+	font-size: 1.3em;
+	width: calc(100% - 200px);
+	min-width: 200px;
+}
+
+/* Removes the white inline of input fields */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+#message {
+	height: 200px;
+	padding: 5px;
+	resize: none;
+	font-size: 1.1em;
+	border: 1px solid black;
+	border-radius: .2em;
+	outline: none;
+}
+
+#contact_submit {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: -50px;
+	background-color: white;
+	border: 1px solid #3498db;
+	border-radius: .2em;
+	width: 80px;
+	height: 40px;
+	color: #3498db;
+	cursor: pointer;
+	transition: .5s;
+}
+
+#contact_submit:hover {
+	background-color: #3498db;
+	color: white;
+	transition: .5s;
+}

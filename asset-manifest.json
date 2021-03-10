@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/MaxDeGeo.github.io/static/css/main.fd9d790f.chunk.css",
+    "main.js": "/MaxDeGeo.github.io/static/js/main.45662c49.chunk.js",
+    "main.js.map": "/MaxDeGeo.github.io/static/js/main.45662c49.chunk.js.map",
+    "runtime-main.js": "/MaxDeGeo.github.io/static/js/runtime-main.97b90a1b.js",
+    "runtime-main.js.map": "/MaxDeGeo.github.io/static/js/runtime-main.97b90a1b.js.map",
+    "static/js/2.5bcbaefa.chunk.js": "/MaxDeGeo.github.io/static/js/2.5bcbaefa.chunk.js",
+    "static/js/2.5bcbaefa.chunk.js.map": "/MaxDeGeo.github.io/static/js/2.5bcbaefa.chunk.js.map",
+    "index.html": "/MaxDeGeo.github.io/index.html",
+    "precache-manifest.6ce03c046f0885ea06efa0a07b737fba.js": "/MaxDeGeo.github.io/precache-manifest.6ce03c046f0885ea06efa0a07b737fba.js",
+    "service-worker.js": "/MaxDeGeo.github.io/service-worker.js",
+    "static/css/main.fd9d790f.chunk.css.map": "/MaxDeGeo.github.io/static/css/main.fd9d790f.chunk.css.map",
+    "static/js/2.5bcbaefa.chunk.js.LICENSE": "/MaxDeGeo.github.io/static/js/2.5bcbaefa.chunk.js.LICENSE",
+    "static/media/Csharp.png": "/MaxDeGeo.github.io/static/media/Csharp.e8460f0d.png",
+    "static/media/cpp.png": "/MaxDeGeo.github.io/static/media/cpp.614e81bd.png",
+    "static/media/css3.png": "/MaxDeGeo.github.io/static/media/css3.eb7f4692.png",
+    "static/media/degeorge_max.pdf": "/MaxDeGeo.github.io/static/media/degeorge_max.1f176829.pdf",
+    "static/media/developer.png": "/MaxDeGeo.github.io/static/media/developer.01afa4df.png",
+    "static/media/itchio.png": "/MaxDeGeo.github.io/static/media/itchio.b67f1004.png",
+    "static/media/java.png": "/MaxDeGeo.github.io/static/media/java.4029c3cd.png",
+    "static/media/js.png": "/MaxDeGeo.github.io/static/media/js.b095413e.png",
+    "static/media/photoshop.svg": "/MaxDeGeo.github.io/static/media/photoshop.44676395.svg",
+    "static/media/react.svg": "/MaxDeGeo.github.io/static/media/react.4009eef3.svg",
+    "static/media/ruby.png": "/MaxDeGeo.github.io/static/media/ruby.cb75cc00.png",
+    "static/media/rubymine.png": "/MaxDeGeo.github.io/static/media/rubymine.b420873f.png",
+    "static/media/swift.png": "/MaxDeGeo.github.io/static/media/swift.db95c7a5.png",
+    "static/media/unity.png": "/MaxDeGeo.github.io/static/media/unity.c9c45e69.png",
+    "static/media/vs.png": "/MaxDeGeo.github.io/static/media/vs.d72b6cd1.png",
+    "static/media/vscode.png": "/MaxDeGeo.github.io/static/media/vscode.225fbbe0.png",
+    "static/media/xcode.png": "/MaxDeGeo.github.io/static/media/xcode.600a107c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97b90a1b.js",
+    "static/js/2.5bcbaefa.chunk.js",
+    "static/css/main.fd9d790f.chunk.css",
+    "static/js/main.45662c49.chunk.js"
+  ]
+}

@@ -176,11 +176,11 @@ export default class Main extends React.Component {
                     <section id="about">
                         <Fade bottom>
                             <div className="sectionHeader">About</div>
-                            <p id="bio">Welcome! My name's Max De George and I'm a Front-End Web Developer and Game Programmer. I'm a fourth year student at the Rochester Institute of Technology
-                            majoring in Game Design & Development along with a minor in Entrepreneurship. I'm from Long Island, New York, and some of my hobbies include playing music (I've played the bass
-                            guitar for eight years and the double bass for 13 years), playing board games, and hanging out with my friends. I aspire to combine innovation and entertainment into one,
-                            so that I help not only to forward technology, but also help create something entertaining that others can enjoy in the process. That's enough about me, onto the important
-                            information! (If you're looking for just a resume, please click <a href={resume} rel="noopener noreferrer" target="_blank" >here</a>)
+                            <p id="bio">Welcome! My name's Max De George and I'm a Front-End Web Developer and Game Programmer. I currently work as a CRM Solution Developer in Microsoft Dynamics 365
+                            and Power Platform. I truly enjoy it, and through this career field I've learned more about what it means to be a developer and how I can work on improving my skillset.
+                            I graduated from the Rochester Institute of Technology with a B.S. in Game Design &amp; Development along with a minor in Entrepreneurship. I'm from Long Island, New York, and 
+                            some of my hobbies include playing music (bass, upright bass, and guitar), playing board games, and hanging out with my friends. I aspire to combine innovation and entertainment into one,
+                            so that I help not only to forward technology, but also help create something that others can enjoy. That's enough about me, onto the important information! (If you're looking for just a resume, please click <a href={resume} rel="noopener noreferrer" target="_blank" >here</a>)
                             </p>
                         </Fade>
                     </section>
@@ -191,22 +191,29 @@ export default class Main extends React.Component {
                                 <ExperienceBox 
                                     title="Rochester Institute of Technology"
                                     primaryRoleTitle="Major"
-                                    primaryRole="Game Design & Development"
+                                    primaryRole="Game Design &amp; Development"
                                     secondaryRoleTitle="Minor"
                                     secondaryRole="Entrepreneurship"
-                                    date="August 2016 - Current"
-                                    description="Currently in the 4th year of undergraduate schooling majoring in Game Design & Development and minoring in Entrepreneurship."/>
+                                    date="August 2016 - December 2020"
+                                    description="B.S. in Game Design &amp; Development and minor in Entrepreneurship."/>
+                                <ExperienceBox 
+                                    title="Avanade"
+                                    primaryRoleTitle="Role"
+                                    primaryRole="CRM Solution Developer"
+                                    date="April 2021 - Current"
+                                    description="Full-time Microsoft Power Platform and D365 Developer working on a variety of projects ranging from D365 Field Service integrations, 
+                                    custom web applications for product rentals, SAP CPQ configurable product creation, and Custom Visuals for PowerBI."/>
                                 <ExperienceBox 
                                     title="Retail Business Services"
                                     primaryRoleTitle="Role"
-                                    primaryRole="Front-End Web Developer Coop"
-                                    date="June 2019 - December 2019"
+                                    primaryRole="Front-End Web Developer Co-op"
+                                    date="June 2019 - December 2019 / January 2021 - April 2021"
                                     description="Worked as a front-end web developer creating internal applications for Ahold Delhaize and its brands. Through this cooperative education
-                                    I learned more about the front-end environment, as well became proficient in React and React-Native, as well as worked with MongoDB a little bit."/>
+                                    I learned more about the front-end environment and growing proficient in React/React-Native."/>
                                 <ExperienceBox 
                                     title="Northridge Church"
                                     primaryRoleTitle="Role"
-                                    primaryRole="Full Stack Web Developer Coop"
+                                    primaryRole="Full Stack Web Developer Co-op"
                                     date="August 2018 - December 2018"
                                     description="Worked as a full stack developer for Northridge Church. Was tasked with creating a time management application, using Ruby and Ruby on Rails
                                     as the language for the task, as well as PostgreSQL as the database. Learned how to operate on my own and find solutions to problems when no one else was around
@@ -217,7 +224,7 @@ export default class Main extends React.Component {
                                     primaryRole="Full Stack Web Developer Intern"
                                     date="June 2018 - July 2018"
                                     description="Worked as a full stack developer for Cru Headquarters. Along with the other interns, we were told to create a prayer request application that could
-                                    be used on the phone, but using Ruby and Ruby on Rails on the web for a quick prototyping of the project during the internship. Learned all about team management
+                                    be used on the phone. Used Ruby and Ruby on Rails on the web for a quick prototyping of the project during the internship. Learned all about team management
                                     and how to openly communicate about problems and blockers, and how to get around them."/>
                         </div>
                        </Fade>
@@ -231,88 +238,78 @@ export default class Main extends React.Component {
                                     <SkillBox
                                         src={html5}
                                         name="HTML"
-                                        time="7 years"
-                                        prof="Experienced"/>
+                                        time="8 years"
+                                        prof="Experienced (4)"/>
                                     <SkillBox
                                         src={css3}
                                         name="CSS"
-                                        time="7 years"
-                                        prof="Experienced"/>
+                                        time="8 years"
+                                        prof="Experienced (4)"/>
                                     <SkillBox
                                         src={js}
                                         name="JavaScript"
-                                        time="7 years"
-                                        prof="Proficient"/>
+                                        time="8 years"
+                                        prof="Experienced (4)"/>
                                     <SkillBox
                                         src={reactLogo}
                                         name="React"
                                         time="6 months"
-                                        prof="Proficient"/>
+                                        prof="Experienced (4)"/>
                                     <SkillBox
                                         src={reactLogo}
                                         name="React Native"
                                         time="3 months"
-                                        prof="Proficient"/>
+                                        prof="Proficient (3)"/>
                                     <SkillBox
                                         src={CSharp}
                                         name="C#"
                                         time="4 years"
-                                        prof="Experienced"/>
+                                        prof="Proficient (3)"/>
                                     <SkillBox
                                         src={Cpp}
                                         name="C++"
                                         time="2 years"
-                                        prof="Proficient"/>
+                                        prof="Proficient (3)"/>
                                     <SkillBox
                                         src={java}
                                         name="Java"
                                         time="6 years"
-                                        prof="Capable"/>
+                                        prof="Capable (2)"/>
                                     <SkillBox
                                         src={ruby}
                                         name="Ruby"
                                         time="2 years"
-                                        prof="Capable"/>
+                                        prof="Capable (2)"/>
                                     <SkillBox
                                         src={swift}
                                         name="Swift"
                                         time="1 years"
-                                        prof="Novice"/>
+                                        prof="Novice (1)"/>
                                 </div>
                             </section>
                             <section id="Software">
                                 <h3 className="skillSectionTitle">Software</h3>
                                 <div className="listLayout">
                                     <SkillBox
-                                        src={vs}
-                                        name="Visual Studio"
-                                        time="4 years"
-                                        prof="Experienced"/>
-                                    <SkillBox
                                         src={vscode}
                                         name="VS Code"
                                         time="3 years"
-                                        prof="Experienced"/>
-                                    <SkillBox
-                                        src={xcode}
-                                        name="Xcode"
-                                        time="1 years"
-                                        prof="Capable"/>
+                                        prof="Experienced (4)"/>
                                     <SkillBox
                                         src={unity}
                                         name="Unity"
                                         time="4 years"
-                                        prof="Experienced"/>
+                                        prof="Experienced (4)"/>
                                     <SkillBox
-                                        src={rubymine}
-                                        name="RubyMine"
-                                        time="2 years"
-                                        prof="Capable"/>
-                                    <SkillBox
-                                        src={photoshop}
-                                        name="Adobe Photoshop"
+                                        src={vs}
+                                        name="Visual Studio"
                                         time="4 years"
-                                        prof="Proficient"/>
+                                        prof="Proficient (3)"/>
+                                    <SkillBox
+                                        src={xcode}
+                                        name="Xcode"
+                                        time="1 years"
+                                        prof="Capable (2)"/>
                                 </div>
                             </section>
                         </Fade>
@@ -320,22 +317,30 @@ export default class Main extends React.Component {
                     <section id="projects">
                         <div className="sectionHeader">Projects</div>
                         <ProjectBox 
-                            title="Snoverload"
+                            title="Budget App"
                             left={true}
+                            type="Mobile App"
+                            languages="C#"
+                            description="Built using React Native, Typescript, and Supabase, the budget app was made to replace a spreadsheet used to keep a rolling log of all income and expenses.
+                            The app keeps track of transactions by category, creates breakdowns of expenses, highlights details through graphs and visuals, and allows
+                            for quick and easy addition of transactions." />
+                        <ProjectBox 
+                            title="Snoverload"
+                            left={false}
                             type="Mobile Game"
                             languages="C#"
                             description="Snoveload is an infinite runner app developed for iOS and Android using Unity. Originally prototyped in the spring of 2019,
                                 Snoverload was released in the winter of 2020 after the formation of a team and was the first game released by Ardin Interactive." />
                         <ProjectBox 
                             title="lunchbox Store Manager App"
-                            left={false}
+                            left={true}
                             type="Mobile Application"
                             languages="JavaScript (React Native)"
-                            description="The lunchbox Store Manager App was built in React Native and released for internal use for lunchbox, a POC (Proof of Concept)
+                            description="The lunchbox Store Manager App was built in React Native and released for internal use for lunchbox, a POC
                                 from Retail Business Services. The app manages store inventory, reordering, store history, and product removal." />
                         <ProjectBox 
                             title="Career Pathing"
-                            left={true}
+                            left={false}
                             type="Web Application"
                             languages="HTML, CSS, JavaScript (React)"
                             description="Career Pathing is an internal tool used by Retail Business Services to allow employees of the company to determine the preferred
@@ -357,7 +362,7 @@ export default class Main extends React.Component {
                                 of three designed a game that relied on proximity of sound and volume of sound to traverse levels in a puzzle based design. Our team removed almost all
                                 visuals to force the player to rely on only sound alone to solve puzzles, which also made the game handicap friendly for those who are visually handicapped." />
                     </section>
-                    <section id="contact">
+                    {/* <section id="contact">
                         <Fade bottom>
                             <div className="sectionHeader">Contact</div>
                             <div>
@@ -381,7 +386,7 @@ export default class Main extends React.Component {
                                 </div>
                             </div>
                         </Fade>
-                    </section>
+                    </section> */}
                     <footer id="footer">
                         <h3 className="sectionHeader">Social Media</h3>
                         <div id="socialList">

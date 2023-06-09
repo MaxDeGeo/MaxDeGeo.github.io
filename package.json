@@ -1,5 +1,5 @@
 {
-  "homepage": "http://MaxDeGeo.github.io/MaxDeGeo.github.io",
+  "homepage": "MaxDeGeo.github.io/MaxDeGeo.github.io",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -40,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^3.2.3"
   }
 }

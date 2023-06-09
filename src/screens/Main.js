@@ -27,8 +27,6 @@ import vs from '../images/vs.png';
 import vscode from '../images/vscode.png';
 import xcode from '../images/xcode.png';
 import unity from '../images/unity.png';
-import rubymine from '../images/rubymine.png';
-import photoshop from '../images/photoshop.svg';
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -138,25 +136,25 @@ export default class Main extends React.Component {
     }
 
     //Updates button upon API response from emailjs
-    sendFeedback = async (templateId, variables) => {
-        let result = await window.emailjs.send('gmail', templateId, variables);
+    // sendFeedback = async (templateId, variables) => {
+    //     let result = await window.emailjs.send('gmail', templateId, variables);
 
-        if (result.status === 200) {
-            this.setState({
-                buttonText: 'Sent!',
-            });
-        } else {
-            this.setState({
-                buttonText: 'Failed.',
-            });
+    //     if (result.status === 200) {
+    //         this.setState({
+    //             buttonText: 'Sent!',
+    //         });
+    //     } else {
+    //         this.setState({
+    //             buttonText: 'Failed.',
+    //         });
 
-            setTimeout(() => {
-                this.setState({
-                    buttonText: 'Send',
-                })
-            }, 2000);
-        }
-      }
+    //         setTimeout(() => {
+    //             this.setState({
+    //                 buttonText: 'Send',
+    //             })
+    //         }, 2000);
+    //     }
+    //   }
 
     render() {
         return (
